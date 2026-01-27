@@ -10,7 +10,7 @@ function App() {
         <div className="navbar-container" style={{flexDirection: 'row-reverse'}}>
           <h1 className="navbar-brand">野猪饲养攻略</h1>
           <div className="navbar-menu">
-            <Link to="/" className="navbar-link">今天食咩野？</Link>
+            <Link to="/cateringchoosing" className="navbar-link">今天食咩野？</Link>
             <Link to="/menu-editor" className="navbar-link">菜单编辑</Link>
           </div>
         </div>
