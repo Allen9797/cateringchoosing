@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import FoodSelector from './components/FoodSelector';
 import MenuEditor from './components/MenuEditor';
 
@@ -17,7 +17,8 @@ function App() {
       </nav>
       <div className="app">
         <Routes>
-          <Route path="/" element={<FoodSelector />} />
+          <Route path="/" element={<Navigate to="/cateringchoosing" replace />} />
+          <Route path="/cateringchoosing" element={<FoodSelector />} />
           <Route path="/menu-editor" element={<MenuEditor />} />
         </Routes>
       </div>
